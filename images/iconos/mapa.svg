@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-labelledby="mapTitle mapDesc">
+  <title id="mapTitle">Mapa de ubicación</title>
+  <desc id="mapDesc">Mapa estilizado mostrando ubicación en San José</desc>
+  <rect width="120" height="80" fill="#E5E7EB"/>
+  <path d="M10 20 L110 20 L110 60 L10 60 Z" fill="#C7D2FE" stroke="#2563EB" stroke-width="2"/>
+  <circle cx="70" cy="40" r="12" fill="#059669"/>
+  <path d="M70 28c-6 0-10 4.5-10 10 0 6 10 20 10 20s10-14 10-20c0-5.5-4-10-10-10z" fill="#DC2626"/>
+  <circle cx="70" cy="40" r="4" fill="#FFFFFF"/>
+</svg>

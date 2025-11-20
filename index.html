@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="InclusivaCR - Líder en accesibilidad web e inclusión digital en Costa Rica. Consultoría, formación y recursos para crear entornos digitales accesibles.">
+  <meta name="keywords" content="accesibilidad web, WCAG, inclusión digital, Costa Rica, consultoría accesibilidad">
+  <meta name="author" content="InclusivaCR">
+  <meta property="og:title" content="InclusivaCR - Accesibilidad e Inclusión Digital">
+  <meta property="og:description" content="Construyendo un mundo digital más inclusivo">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inclusivacr.com">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preload" as="style" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/accesibilidad.css">
+  <title>InclusivaCR - Accesibilidad e Inclusión Digital | Inicio</title>
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+  <header class="header" role="banner">
+    <div class="container header-contenido">
+      <a class="logo" href="index.html" aria-label="Inicio InclusivaCR">
+        <img src="images/logo.svg" alt="InclusivaCR - Accesibilidad e inclusión digital" width="160" height="48" loading="lazy">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+        <span class="icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Abrir o cerrar menú</span>
+      </button>
+      <nav class="nav" id="nav-menu" aria-label="Navegación principal" role="navigation">
+        <ul class="nav-lista">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="recursos.html">Recursos</a></li>
+          <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-titulo">
+      <div class="container hero-grid">
+        <div class="hero-texto">
+          <p class="etiqueta">Accesibilidad digital en Costa Rica</p>
+          <h1 id="hero-titulo">Construyendo un mundo digital más inclusivo</h1>
+          <p class="subtitulo">Desde 2018, InclusivaCR ha sido líder en Costa Rica promoviendo la accesibilidad digital y la inclusión de personas con discapacidad en el mundo tecnológico.</p>
+          <div class="hero-acciones">
+            <a class="btn btn-primario" href="#servicios">Conoce nuestros servicios</a>
+            <a class="btn btn-secundario" href="recursos.html">Ver recursos gratuitos</a>
+          </div>
+          <ul class="lista-destacada" aria-label="Logros clave de InclusivaCR">
+            <li>Consultoría especializada en WCAG 2.1 nivel AA</li>
+            <li>Formación práctica para equipos técnicos y no técnicos</li>
+            <li>Auditorías con planes de acción priorizados</li>
+          </ul>
+        </div>
+        <figure class="hero-imagen">
+          <picture>
+            <source srcset="images/hero.webp" media="(max-width: 767px)" type="image/webp">
+            <source srcset="images/hero.webp" media="(min-width: 768px)" type="image/webp">
+            <img src="images/hero.webp" alt="Equipo de InclusivaCR trabajando en un sitio web accesible" loading="lazy" width="640" height="360">
+          </picture>
+          <figcaption>Soluciones accesibles, sostenibles y sin rastreo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="seccion" id="servicios" aria-labelledby="servicios-titulo">
+      <div class="container">
+        <h2 id="servicios-titulo">Servicios especializados</h2>
+        <p class="seccion-descripcion">Trabajamos con empresas, instituciones públicas y organizaciones sociales para eliminar barreras digitales y garantizar experiencias accesibles.</p>
+        <div class="grid servicios-grid" role="list">
+          <article class="card servicio" role="listitem">
+            <img src="images/iconos/consultoria.svg" alt="Icono de consultoría" class="servicio-icono" loading="lazy" width="64" height="64">
+            <h3>Consultoría en Accesibilidad Web</h3>
+            <p>Evaluamos y mejoramos la accesibilidad de tu sitio web según estándares internacionales WCAG 2.1. Identificamos barreras y proponemos soluciones efectivas.</p>
+          </article>
+          <article class="card servicio" role="listitem">
+            <img src="images/iconos/formacion.svg" alt="Icono de formación" class="servicio-icono" loading="lazy" width="64" height="64">
+            <h3>Formación y Capacitación Empresarial</h3>
+            <p>Capacitamos a tu equipo en diseño inclusivo, desarrollo accesible y sensibilización sobre discapacidad. Cursos presenciales y virtuales adaptados a tus necesidades.</p>
+          </article>
+          <article class="card servicio" role="listitem">
+            <img src="images/iconos/auditoria.svg" alt="Icono de auditoría" class="servicio-icono" loading="lazy" width="64" height="64">
+            <h3>Auditorías de Accesibilidad</h3>
+            <p>Realizamos auditorías técnicas completas de accesibilidad y entregamos reportes detallados con recomendaciones priorizadas y plan de acción.</p>
+          </article>
+          <article class="card servicio" role="listitem">
+            <img src="images/iconos/recursos.svg" alt="Icono de recursos" class="servicio-icono" loading="lazy" width="64" height="64">
+            <h3>Recursos Educativos Gratuitos</h3>
+            <p>Accede a guías prácticas, checklist de accesibilidad, artículos educativos y herramientas para hacer tu proyecto más accesible desde hoy mismo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-alt" aria-labelledby="porque-titulo">
+      <div class="container">
+        <div class="seccion-encabezado">
+          <h2 id="porque-titulo">¿Por qué elegirnos?</h2>
+          <p>Resultados medibles, enfoque humano y acompañamiento continuo en cada proyecto.</p>
+        </div>
+        <div class="grid estadisticas" role="list">
+          <article class="stat" role="listitem">
+            <p class="stat-numero">+500</p>
+            <p class="stat-texto">Empresas capacitadas en toda Costa Rica</p>
+          </article>
+          <article class="stat" role="listitem">
+            <p class="stat-numero">10 años</p>
+            <p class="stat-texto">De experiencia en accesibilidad digital</p>
+          </article>
+          <article class="stat" role="listitem">
+            <p class="stat-numero">95%</p>
+            <p class="stat-texto">De satisfacción de nuestros clientes</p>
+          </article>
+          <article class="stat" role="listitem">
+            <p class="stat-numero">Certificados</p>
+            <p class="stat-texto">Por organismos internacionales</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="testimonios-titulo">
+      <div class="container">
+        <div class="seccion-encabezado">
+          <h2 id="testimonios-titulo">Historias reales</h2>
+          <p>Testimonios de equipos que transformaron su forma de trabajar con accesibilidad.</p>
+        </div>
+        <div class="grid testimonios" role="list">
+          <article class="card testimonio" role="listitem">
+            <p class="testimonio-texto">"Gracias a InclusivaCR, nuestro sitio web ahora es accesible para todos nuestros usuarios. El equipo fue profesional y el proceso muy claro. Ahora cumplimos con los estándares internacionales."</p>
+            <p class="testimonio-autor">Ana Ramírez, Gerente de TI, Banco Nacional de Costa Rica</p>
+          </article>
+          <article class="card testimonio" role="listitem">
+            <p class="testimonio-texto">"La capacitación que recibimos transformó la manera en que desarrollamos software. Ahora la accesibilidad es parte integral de nuestro proceso, no una ocurrencia tardía."</p>
+            <p class="testimonio-autor">Carlos Mora, Lead Developer, TechCR Solutions</p>
+          </article>
+          <article class="card testimonio" role="listitem">
+            <p class="testimonio-texto">"Los recursos gratuitos de InclusivaCR han sido invaluables para nuestra ONG. Pudimos mejorar nuestro sitio web sin necesidad de contratar consultores externos."</p>
+            <p class="testimonio-autor">Patricia Solís, Directora, Fundación Igualdad Digital</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-titulo">Enlaces rápidos</h2>
+        <ul class="footer-lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Contacto</h2>
+        <ul class="footer-lista">
+          <li>San José, Costa Rica</li>
+          <li>+506 2222-3333</li>
+          <li><a href="mailto:info@inclusivacr.com">info@inclusivacr.com</a></li>
+          <li>Horario: Lun-Vie 8:00 - 17:00</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Síguenos</h2>
+        <ul class="footer-lista">
+          <li><a href="#" aria-label="Facebook de InclusivaCR">Facebook</a></li>
+          <li><a href="#" aria-label="LinkedIn de InclusivaCR">LinkedIn</a></li>
+          <li><a href="#" aria-label="Instagram de InclusivaCR">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube de InclusivaCR">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2025 InclusivaCR. Todos los derechos reservados.</p>
+      <p>Comprometidos con la accesibilidad digital y la inclusión.</p>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-content">
+      <h2 id="cookie-title">🍪 Respetamos tu privacidad</h2>
+      <p id="cookie-desc">Este sitio web <strong>NO utiliza cookies de seguimiento</strong> ni rastreadores de terceros. Solo guardamos tu preferencia sobre este aviso en el almacenamiento local de tu navegador para no volver a mostrarlo.</p>
+      <p>No compartimos tu información con terceros. No usamos Google Analytics ni herramientas de marketing.</p>
+      <div class="cookie-buttons">
+        <button id="cookie-accept" class="btn btn-primario">Entendido</button>
+        <a href="privacidad.html" class="btn btn-secundario">Política de Privacidad</a>
+      </div>
+      <button id="cookie-close" class="cookie-close" aria-label="Cerrar aviso">×</button>
+    </div>
+  </div>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/cookies.js"></script>
+</body>
+</html>

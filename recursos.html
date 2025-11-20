@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="InclusivaCR - Recursos educativos gratuitos sobre accesibilidad web en Costa Rica.">
+  <meta name="keywords" content="recursos accesibilidad, guías WCAG, Costa Rica, InclusivaCR">
+  <meta name="author" content="InclusivaCR">
+  <meta property="og:title" content="InclusivaCR - Recursos de Accesibilidad">
+  <meta property="og:description" content="Guías, artículos y herramientas para crear sitios accesibles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inclusivacr.com/recursos">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/accesibilidad.css">
+  <title>InclusivaCR - Recursos Educativos</title>
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+  <header class="header" role="banner">
+    <div class="container header-contenido">
+      <a class="logo" href="index.html" aria-label="Inicio InclusivaCR">
+        <img src="images/logo.svg" alt="InclusivaCR - Accesibilidad e inclusión digital" width="160" height="48" loading="lazy">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+        <span class="icon" aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav-menu" aria-label="Navegación principal" role="navigation">
+        <ul class="nav-lista">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="recursos.html">Recursos</a></li>
+          <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal" tabindex="-1">
+    <section class="seccion" aria-labelledby="recursos-titulo">
+      <div class="container recursos-layout">
+        <div class="recursos-principal">
+          <h1 id="recursos-titulo">Recursos educativos gratuitos</h1>
+          <p class="seccion-descripcion">InclusivaCR ofrece recursos educativos gratuitos para promover la accesibilidad web en Costa Rica y ayudar a desarrolladores, diseñadores y empresas a crear experiencias digitales inclusivas.</p>
+          <div class="grid recursos-grid" role="list">
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-guia">Guías y Manuales</div>
+              <h2>Guía Completa WCAG 2.1 para Desarrolladores</h2>
+              <p>Manual completo que explica los criterios de conformidad de las WCAG 2.1 con ejemplos prácticos en HTML y CSS. Incluye checklist de verificación y recursos adicionales.</p>
+              <a class="btn btn-primario" href="docs/recursos/guia-wcag.pdf" download>Descargar PDF</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-guia">Guías y Manuales</div>
+              <h2>Manual de Diseño Inclusivo para Interfaces</h2>
+              <p>Aprende los principios fundamentales del diseño inclusivo: contraste de colores, tipografía legible, navegación clara y diseño para diferentes discapacidades.</p>
+              <a class="btn btn-primario" href="docs/recursos/manual-diseno-inclusivo.pdf" download>Descargar PDF</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-articulo">Artículos Educativos</div>
+              <h2>10 Errores Comunes de Accesibilidad y Cómo Evitarlos</h2>
+              <p>Descubre los errores más frecuentes que cometen los desarrolladores al crear sitios web y aprende soluciones prácticas para cada uno de ellos.</p>
+              <a class="btn btn-secundario" href="docs/recursos/errores-comunes.pdf" download>Leer más</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-articulo">Artículos Educativos</div>
+              <h2>Cómo Hacer tu Sitio Web Accesible con HTML Semántico</h2>
+              <p>Tutorial paso a paso sobre el uso correcto de etiquetas HTML5 semánticas para mejorar la accesibilidad y el SEO de tu sitio web.</p>
+              <a class="btn btn-secundario" href="docs/recursos/html-semantico.pdf" download>Leer más</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-herramienta">Herramientas</div>
+              <h2>Herramientas Esenciales para Evaluar Accesibilidad</h2>
+              <p>Lista curada de las mejores herramientas gratuitas para evaluar la accesibilidad de tu sitio: WAVE, axe DevTools, Lighthouse, lectores de pantalla y más.</p>
+              <a class="btn btn-primario" href="docs/recursos/herramientas-accesibilidad.pdf" download>Descargar PDF</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-herramienta">Herramientas</div>
+              <h2>Extensiones de Navegador para Desarrolladores</h2>
+              <p>Colección de extensiones útiles para Chrome, Firefox y Edge que te ayudarán a detectar y corregir problemas de accesibilidad durante el desarrollo.</p>
+              <a class="btn btn-primario" href="docs/recursos/extensiones-desarrolladores.pdf" download>Descargar PDF</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-checklist">Checklist</div>
+              <h2>Checklist: Accesibilidad Antes de Publicar</h2>
+              <p>Lista de verificación completa con todos los puntos que debes revisar antes de lanzar tu sitio web para garantizar que cumple con WCAG 2.1 nivel AA.</p>
+              <a class="btn btn-primario" href="docs/recursos/checklist-previo.pdf" download>Descargar PDF</a>
+            </article>
+            <article class="card recurso" role="listitem">
+              <div class="recurso-categoria categoria-video">Videos y Tutoriales</div>
+              <h2>Serie de Videos: Accesibilidad Web Desde Cero</h2>
+              <p>Curso en video gratuito que cubre desde los conceptos básicos hasta técnicas avanzadas de accesibilidad. Ideal para principiantes y desarrolladores intermedios.</p>
+              <a class="btn btn-secundario" href="docs/recursos/videos-accesibilidad.pdf" download>Ver detalle</a>
+            </article>
+          </div>
+        </div>
+        <aside class="recursos-aside" aria-label="Suscripción y enlaces recomendados">
+          <div class="card suscripcion">
+            <h2>Recibe recursos nuevos cada mes</h2>
+            <p>Envíamos un resumen sin rastreo y con enlaces directos a nuevos materiales.</p>
+            <form class="formulario-suscripcion" aria-label="Formulario de suscripción">
+              <label for="suscripcion-email">Correo electrónico</label>
+              <input type="email" id="suscripcion-email" name="suscripcion-email" placeholder="correo@ejemplo.com" aria-required="true">
+              <button type="submit" class="btn btn-primario">Suscribirme</button>
+            </form>
+          </div>
+          <div class="card enlaces-externos">
+            <h2>Recursos externos recomendados</h2>
+            <ul>
+              <li><a href="https://www.w3.org/WAI/" target="_blank" rel="noopener" aria-label="W3C WAI abre en nueva ventana">W3C WAI</a></li>
+              <li><a href="https://wave.webaim.org/" target="_blank" rel="noopener" aria-label="WAVE WebAIM abre en nueva ventana">WAVE de WebAIM</a></li>
+              <li><a href="https://developer.mozilla.org/es/docs/Web/Accessibility" target="_blank" rel="noopener" aria-label="MDN Accesibilidad abre en nueva ventana">MDN Accesibilidad</a></li>
+            </ul>
+          </div>
+          <div class="card eventos">
+            <h2>Próximos talleres</h2>
+            <ul>
+              <li>Introducción a WCAG 2.2 - 20 abril</li>
+              <li>Diseño inclusivo en Figma - 5 mayo</li>
+              <li>Auditorías rápidas con herramientas gratuitas - 18 mayo</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-titulo">Enlaces rápidos</h2>
+        <ul class="footer-lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Contacto</h2>
+        <ul class="footer-lista">
+          <li>San José, Costa Rica</li>
+          <li>+506 2222-3333</li>
+          <li><a href="mailto:info@inclusivacr.com">info@inclusivacr.com</a></li>
+          <li>Horario: Lun-Vie 8:00 - 17:00</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Síguenos</h2>
+        <ul class="footer-lista">
+          <li><a href="#" aria-label="Facebook de InclusivaCR">Facebook</a></li>
+          <li><a href="#" aria-label="LinkedIn de InclusivaCR">LinkedIn</a></li>
+          <li><a href="#" aria-label="Instagram de InclusivaCR">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube de InclusivaCR">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2025 InclusivaCR. Todos los derechos reservados.</p>
+      <p>Comprometidos con la accesibilidad digital y la inclusión.</p>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-content">
+      <h2 id="cookie-title">🍪 Respetamos tu privacidad</h2>
+      <p id="cookie-desc">Este sitio web <strong>NO utiliza cookies de seguimiento</strong> ni rastreadores de terceros. Solo guardamos tu preferencia sobre este aviso en el almacenamiento local de tu navegador para no volver a mostrarlo.</p>
+      <p>No compartimos tu información con terceros. No usamos Google Analytics ni herramientas de marketing.</p>
+      <div class="cookie-buttons">
+        <button id="cookie-accept" class="btn btn-primario">Entendido</button>
+        <a href="privacidad.html" class="btn btn-secundario">Política de Privacidad</a>
+      </div>
+      <button id="cookie-close" class="cookie-close" aria-label="Cerrar aviso">×</button>
+    </div>
+  </div>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/cookies.js"></script>
+</body>
+</html>

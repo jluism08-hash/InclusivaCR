@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Contáctanos para consultoría, formación o auditorías de accesibilidad web en Costa Rica.">
+  <meta name="keywords" content="contacto accesibilidad, InclusivaCR, consultoría accesibilidad">
+  <meta name="author" content="InclusivaCR">
+  <meta property="og:title" content="Contacto InclusivaCR">
+  <meta property="og:description" content="Estamos listos para ayudarte con accesibilidad web y educación inclusiva.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://inclusivacr.com/contacto">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/accesibilidad.css">
+  <title>InclusivaCR - Contáctanos</title>
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+  <header class="header" role="banner">
+    <div class="container header-contenido">
+      <a class="logo" href="index.html" aria-label="Inicio InclusivaCR">
+        <img src="images/logo.svg" alt="InclusivaCR - Accesibilidad e inclusión digital" width="160" height="48" loading="lazy">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+        <span class="icon" aria-hidden="true">☰</span>
+      </button>
+      <nav class="nav" id="nav-menu" aria-label="Navegación principal" role="navigation">
+        <ul class="nav-lista">
+          <li><a class="nav-link" href="index.html">Inicio</a></li>
+          <li><a class="nav-link" href="recursos.html">Recursos</a></li>
+          <li><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+          <li><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal" tabindex="-1">
+    <section class="banner" aria-labelledby="contacto-titulo">
+      <div class="container">
+        <p class="etiqueta">Contáctanos</p>
+        <h1 id="contacto-titulo">¿Cómo podemos ayudarte?</h1>
+        <p class="seccion-descripcion">Estamos aquí para responder tus consultas sobre accesibilidad web, brindarte información sobre nuestros servicios o asesorarte en tu proyecto. Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas.</p>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="formulario-titulo">
+      <div class="container contacto-layout">
+        <div class="formulario-wrapper">
+          <h2 id="formulario-titulo">Envíanos un mensaje</h2>
+          <p>Todos los campos marcados con * son obligatorios. Respetamos tu privacidad y no compartimos tus datos con terceros.</p>
+          <form id="contact-form" novalidate>
+            <div class="campo-form">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej: María González" minlength="3" required aria-required="true" aria-invalid="false" aria-describedby="nombre-error">
+              <span id="nombre-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="campo-form">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-required="true" aria-invalid="false" aria-describedby="email-error">
+              <span id="email-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="campo-form">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="8888-8888" pattern="[0-9]{4}-[0-9]{4}" aria-required="false" aria-invalid="false" aria-describedby="telefono-error">
+              <span id="telefono-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="campo-form">
+              <label for="tipo-consulta">Tipo de consulta *</label>
+              <select id="tipo-consulta" name="tipo-consulta" required aria-required="true" aria-invalid="false" aria-describedby="tipo-error">
+                <option value="default">Selecciona una opción</option>
+                <option value="consultoria">Consultoría en Accesibilidad Web</option>
+                <option value="capacitacion">Capacitación y Talleres</option>
+                <option value="auditoria">Auditoría de Sitio Web</option>
+                <option value="recursos">Recursos y Documentación</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span id="tipo-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="campo-form">
+              <label for="mensaje">Mensaje *</label>
+              <textarea id="mensaje" name="mensaje" rows="6" minlength="20" placeholder="Cuéntanos en qué podemos ayudarte..." required aria-required="true" aria-invalid="false" aria-describedby="mensaje-error"></textarea>
+              <span id="mensaje-error" class="error-message" role="alert"></span>
+            </div>
+
+            <div class="campo-form">
+              <div class="checkbox-contenedor">
+                <input type="checkbox" id="privacidad" name="privacidad" required aria-required="true" aria-invalid="false" aria-describedby="privacidad-error">
+                <label for="privacidad">He leído y acepto la <a href="privacidad.html">política de privacidad</a></label>
+              </div>
+              <span id="privacidad-error" class="error-message" role="alert"></span>
+            </div>
+
+            <button type="submit" id="submit-button" class="btn btn-primario" disabled>Enviar mensaje</button>
+          </form>
+        </div>
+
+        <div class="contacto-info">
+          <h2>Información de contacto</h2>
+          <div class="grid info-grid" role="list">
+            <article class="card info" role="listitem">
+              <h3>Dirección</h3>
+              <p>Avenida Central, San José, Costa Rica<br>Edificio InclusivaCR, Piso 3</p>
+            </article>
+            <article class="card info" role="listitem">
+              <h3>Teléfono</h3>
+              <p>+506 2222-3333<br>Lunes a Viernes: 8:00 AM - 5:00 PM</p>
+            </article>
+            <article class="card info" role="listitem">
+              <h3>Correo electrónico</h3>
+              <p><a href="mailto:info@inclusivacr.com">info@inclusivacr.com</a><br>Respuesta en menos de 24 horas</p>
+            </article>
+            <article class="card info" role="listitem">
+              <h3>Redes sociales</h3>
+              <ul>
+                <li>Facebook: /InclusivaCR</li>
+                <li>LinkedIn: /company/inclusivacr</li>
+                <li>Instagram: @inclusivacr</li>
+              </ul>
+            </article>
+          </div>
+          <figure class="mapa">
+            <img src="images/iconos/mapa.svg" alt="Ubicación de InclusivaCR en San José, Costa Rica" loading="lazy" width="320" height="200">
+            <figcaption>Estamos en el corazón de San José.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h2 class="footer-titulo">Enlaces rápidos</h2>
+        <ul class="footer-lista">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="privacidad.html">Política de Privacidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Contacto</h2>
+        <ul class="footer-lista">
+          <li>San José, Costa Rica</li>
+          <li>+506 2222-3333</li>
+          <li><a href="mailto:info@inclusivacr.com">info@inclusivacr.com</a></li>
+          <li>Horario: Lun-Vie 8:00 - 17:00</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-titulo">Síguenos</h2>
+        <ul class="footer-lista">
+          <li><a href="#" aria-label="Facebook de InclusivaCR">Facebook</a></li>
+          <li><a href="#" aria-label="LinkedIn de InclusivaCR">LinkedIn</a></li>
+          <li><a href="#" aria-label="Instagram de InclusivaCR">Instagram</a></li>
+          <li><a href="#" aria-label="YouTube de InclusivaCR">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2025 InclusivaCR. Todos los derechos reservados.</p>
+      <p>Comprometidos con la accesibilidad digital y la inclusión.</p>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-desc">
+    <div class="cookie-content">
+      <h2 id="cookie-title">🍪 Respetamos tu privacidad</h2>
+      <p id="cookie-desc">Este sitio web <strong>NO utiliza cookies de seguimiento</strong> ni rastreadores de terceros. Solo guardamos tu preferencia sobre este aviso en el almacenamiento local de tu navegador para no volver a mostrarlo.</p>
+      <p>No compartimos tu información con terceros. No usamos Google Analytics ni herramientas de marketing.</p>
+      <div class="cookie-buttons">
+        <button id="cookie-accept" class="btn btn-primario">Entendido</button>
+        <a href="privacidad.html" class="btn btn-secundario">Política de Privacidad</a>
+      </div>
+      <button id="cookie-close" class="cookie-close" aria-label="Cerrar aviso">×</button>
+    </div>
+  </div>
+
+  <script defer src="js/main.js"></script>
+  <script defer src="js/cookies.js"></script>
+  <script defer src="js/formulario.js"></script>
+</body>
+</html>
